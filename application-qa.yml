@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: CONFIG-SERVER
+  
+  
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dheeraj198922/openeye_config_server
+          clone-on-start: true
+          
+    
+#common database configuration
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/openeyeqa
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
