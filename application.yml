@@ -9,6 +9,7 @@ spring:
         git:
           uri: https://github.com/dheeraj198922/openeye_config_server
           clone-on-start: true
+      enabled: true
           
     
 #common database configuration
